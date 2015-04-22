@@ -7,7 +7,7 @@ process.title = 'nftpd';
 
 program
 	.version(require(__dirname+'/package.json'))
-	.option('-u, --user [username]', 'Specify a username (default 'anonymous')')
+	.option('-u, --user [username]', 'Specify a username (default "anonymous")')
 	.option('-p, --pass [password]', 'Specify a password (default blank)')
   .option('-n, --port [number]', 'Port number to use. (default 2121)')
 	.option('-d, --dir [root]', 'Root directory (default cwd)')
