@@ -51,7 +51,11 @@ require('dns').lookup(require('os').hostname(), function (err, add, fam) {
 		var addr = conn.socket.remoteAddress;
 		console.log(addr, 'Client connected');
 		conn.on('command:user', function(user, success, failure) {
-			(user == program.user) ? success(): failure();
+			if(user == program.user){
+				success();
+			} else {
+				failure();
+			}
 		});
 		conn.on('command:pass', function(pass, success, failure) {
 			// check the password
@@ -60,11 +64,11 @@ require('dns').lookup(require('os').hostname(), function (err, add, fam) {
 				success(program.user);
 			} else {
 				if(pass == program.pass){
-				console.log(addr, 'Access granted for ', program.user);
-				success(program.user);
+					console.log(addr, 'Access granted for ', program.user);
+					success(program.user);
 				} else {
 				console.log(addr, 'Access denied for ', program.user);
-				failure()
+					failure();
 				}
 			}
 		});
