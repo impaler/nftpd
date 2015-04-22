@@ -8,8 +8,8 @@ production thing.
 Usage
 -----
 
-To fire up an anonymous FTP server in the current folder, run
-`node /path/to/index.js`.
+* Install with `npm install -g nftpd`.
+* To fire up an anonymous FTP server in the current folder, run `nftpd`.
 
 Note that this is a full-on server, with write and delete access.
 
