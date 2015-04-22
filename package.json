@@ -1,6 +1,6 @@
 {
   "name": "nftpd",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Quick command-line FTP daemon.",
   "main": "index.js",
   "author": "Ash Kyd <ash@kyd.com.au> (http://ash.ms/)",
