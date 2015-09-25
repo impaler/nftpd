@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "commander": "^2.8.0",
-    "ftpd": "git://github.com:fabiengb/nodeftpd.git#8a7ff07a20f2bbc5f8659e844e2976d00d5b7544"
+    "ftpd": "git://github.com:impaler/nodeftpd.git#master"
   }
 }
